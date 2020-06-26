@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  node:
+    image: ykocabay/php7.4_nginx_composer
+    volumes:
+        - .:/app/
+  
+    ports:
+        - "6060:80"
